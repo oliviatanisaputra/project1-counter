@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Viewer from './components/Viewer'
+import Controller from './components/Controller'
+import Even from './components/Even'
+import { useEffect, useState } from 'react'
 
 function App() {
+  const [count, setCount] = useState(0);
+  const [text, setText] = useState('');
+
+  const handleSetCount = (value) => {
+    setCount(count + value);
+  };
+
+  const handleChangeText = (e) => {
+    setText(e.target.value);
+  };
+
+  useEffect(() => {
+    console.log('컴포넌트 업데이트: ', text, count);
+  }, [text, count]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Simple Counter</h1>
+      <section>
+        <input value={text} onChange={handleChangeText} />
+      </section>
+      <section>
+        <Viewer count={count} />
+        {count % 2 === 0 && <Even />}
+      </section>
+      <section>
+        <Controller handleSetCount={handleSetCount} />
+      </section>
     </div>
   );
 }
