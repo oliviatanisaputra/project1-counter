@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Simple Counter
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based counter application demonstrating fundamental concepts of component-based architecture, state management, and lifecycle methods.
 
-## Available Scripts
+## 📋 Overview
 
-In the project directory, you can run:
+This project is an interactive counter application built with React that showcases core React concepts including state management with hooks, component composition, conditional rendering, and side effects handling. The application provides an intuitive interface for incrementing and decrementing a numerical counter with various step values.
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Dynamic Counter Display**: Real-time counter value visualization
+- **Multiple Increment Options**: Buttons for adjusting the counter by ±1, ±10, and ±100
+- **Even Number Detection**: Conditional rendering that displays a message when the counter value is even
+- **Component Lifecycle Tracking**: Console logging for monitoring component updates and unmounting
+- **Input Field**: Additional text input for demonstrating multiple state management
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🏗️ Architecture
 
-### `npm test`
+The application follows a modular component structure:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Components
 
-### `npm run build`
+- **App.js**: Main application component managing global state and orchestrating child components
+- **Viewer.js**: Presentational component for displaying the current counter value
+- **Controller.js**: Interactive component containing increment/decrement buttons
+- **Even.js**: Conditional component that appears only when the counter is an even number
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **React**: JavaScript library for building user interfaces
+- **React Hooks**: 
+  - `useState` for state management
+  - `useEffect` for side effects and lifecycle management
+- **CSS**: Custom styling for component presentation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 💡 Key Concepts Demonstrated
 
-### `npm run eject`
+1. **State Management**: Using `useState` to manage counter and text input states
+2. **Props Drilling**: Passing state and handlers between parent and child components
+3. **Event Handling**: Managing user interactions through button clicks and input changes
+4. **Conditional Rendering**: Dynamically showing/hiding components based on state (`count % 2 === 0`)
+5. **Side Effects**: Implementing `useEffect` for logging and cleanup operations
+6. **Component Lifecycle**: Understanding mount, update, and unmount phases
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📝 Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Click the **+1**, **+10**, or **+100** buttons to increment the counter
+- Click the **-1**, **-10**, or **-100** buttons to decrement the counter
+- The "현재 카운트는 짝수입니다" (Current count is even) message appears when the counter value is even
+- Type in the input field to see multi-state management in action
+- Open the browser console to observe component lifecycle logs
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🎓 Learning Outcomes
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This project was developed as part of Software Development Practice 2 (소프트웨어개발실습2) course and demonstrates:
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Proficiency in React fundamentals
+- Understanding of component-based architecture
+- Practical application of React Hooks
+- Clean code organization and separation of concerns
+- User interface development with React
