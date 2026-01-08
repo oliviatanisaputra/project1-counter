@@ -2,11 +2,11 @@
 
 A React-based counter application demonstrating fundamental concepts of component-based architecture, state management, and lifecycle methods.
 
-## 📋 Overview
+## Overview
 
 This project is an interactive counter application built with React that showcases core React concepts including state management with hooks, component composition, conditional rendering, and side effects handling. The application provides an intuitive interface for incrementing and decrementing a numerical counter with various step values.
 
-## ✨ Features
+## Features
 
 - **Dynamic Counter Display**: Real-time counter value visualization
 - **Multiple Increment Options**: Buttons for adjusting the counter by ±1, ±10, and ±100
@@ -14,7 +14,7 @@ This project is an interactive counter application built with React that showcas
 - **Component Lifecycle Tracking**: Console logging for monitoring component updates and unmounting
 - **Input Field**: Additional text input for demonstrating multiple state management
 
-## 🏗️ Architecture
+## Architecture
 
 The application follows a modular component structure:
 
@@ -25,7 +25,7 @@ The application follows a modular component structure:
 - **Controller.js**: Interactive component containing increment/decrement buttons
 - **Even.js**: Conditional component that appears only when the counter is an even number
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **React**: JavaScript library for building user interfaces
 - **React Hooks**: 
@@ -33,7 +33,7 @@ The application follows a modular component structure:
   - `useEffect` for side effects and lifecycle management
 - **CSS**: Custom styling for component presentation
 
-## 💡 Key Concepts Demonstrated
+## Key Concepts Demonstrated
 
 1. **State Management**: Using `useState` to manage counter and text input states
 2. **Props Drilling**: Passing state and handlers between parent and child components
@@ -42,7 +42,7 @@ The application follows a modular component structure:
 5. **Side Effects**: Implementing `useEffect` for logging and cleanup operations
 6. **Component Lifecycle**: Understanding mount, update, and unmount phases
 
-## 📝 Usage
+## Usage
 
 - Click the **+1**, **+10**, or **+100** buttons to increment the counter
 - Click the **-1**, **-10**, or **-100** buttons to decrement the counter
@@ -50,7 +50,7 @@ The application follows a modular component structure:
 - Type in the input field to see multi-state management in action
 - Open the browser console to observe component lifecycle logs
 
-## 🎓 Learning Outcomes
+## Learning Outcomes
 
 This project was developed as part of Software Development Practice 2 (소프트웨어개발실습2) course and demonstrates:
 
